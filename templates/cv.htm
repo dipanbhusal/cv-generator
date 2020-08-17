@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+		<style type="text/css">
+			body{
+				font-family: Arial, serif;
+				font-weight: normal;
+                font-style: normal;
+                text-decoration: none;
+			}
+            #container {
+                position: absolute;
+                left: 50%;
+                margin-left: -306px;
+                top: 0px;
+                width: 612px;
+                height: 792px;
+                border-style: outset;
+                overflow: hidden;
+			}
+			.contact-info{
+				position: absolute; left: 361.5px; top: 83.79px;
+				
+                font-size: 10px;
+                
+			}
+			.personal-info{
+				position: absolute;
+				left: 72px;
+				top: 103px;
+				font-family: Arial, serif;
+                font-size: 11px;
+                
+			}
+			.education{
+				position: absolute; 
+				left: 72px; 
+				top: 155.51px;	
+				font-size: 11px;
+                font-style: normal;
+                text-decoration: none;
+			}
+			.headings-2{
+				font-size: 10px;
+			}
+            span.cls_003 {
+                font-family: Arial, serif;
+                font-size: 10px;
+                color: rgb(0, 0, 0);
+                
+            }
+            div.cls_003 {
+                font-family: Arial, serif;
+                font-size: 10px;
+                color: rgb(0, 0, 0);
+                
+            }
+            span.cls_009 {
+                font-family: Arial, serif;
+                font-size: 10px;
+                
+                font-weight: normal;
+                font-style: normal;
+                text-decoration: underline;
+            }
+            div.cls_009 {
+                font-family: Arial, serif;
+                font-size: 10px;
+                
+                font-weight: normal;
+                font-style: normal;
+                text-decoration: none;
+            }
+            span.cls_005 {
+                font-family: Arial, serif;
+                font-size: 11px;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                font-style: normal;
+                text-decoration: none;
+            }
+            div.cls_005 {
+                font-family: Arial, serif;
+                font-size: 11px;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                font-style: normal;
+                text-decoration: none;
+            }
+           
+            div.cls_006 {
+                font-family: Arial, serif;
+                font-size: 10px;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                font-style: normal;
+                text-decoration: none;
+            }
+            span.cls_007 {
+                font-family: Arial, serif;
+                font-size: 12.1px;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                font-style: normal;
+                text-decoration: none;
+            }
+            div.cls_007 {
+                font-family: Arial, serif;
+                font-size: 12.1px;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                font-style: normal;
+                text-decoration: none;
+            }
+            span.cls_008 {
+                font-family: Arial, serif;
+                font-size: 10px;
+                color: rgb(0, 0, 0);
+                font-weight: normal;
+                font-style: normal;
+                text-decoration: none;
+            }
+            div.cls_008 {
+                font-family: Arial, serif;
+                font-size: 10px;
+                color: rgb(0, 0, 0);
+                font-weight: normal;
+                font-style: normal;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+			<div class="contact-info">
+				<span class="cls_003">E-mail: </span><a href="mailto:levilins40@gmail.com">{{email}}</a> <br>
+				<span class="cls_003">GitHub:</span><a href="https://github.com/dipanbhusal">{{github}}</a><br>
+				<span class="cls_003">Mobile: {{phone}}</span>
+			</div>
+            
+            <div class="personal-info">
+				<span class="cls_005">{{fullname}}</span> <br>
+				<span class="cls_003">{{address1}}</span> <br>
+			</div>
+           
+			<div  class="education">
+				
+					<span class="cls_005">Education</span> <br> <br>
+					<span class="cls_006">{{university1.degree}}</span><span class="cls_003"> in {{university1.faculty}}</span>  <br>
+					<span class="cls_003">{{university1.name}}</span> <br>
+
+				
+				</div>
+		<div style="position:absolute;left:360.00px;top:185.04px" class="cls_006"><span class="cls_006">{{university1.start_date}} to {{university1.end_date}}</span></div>
+
+        <div style="position:absolute;left:72.00px;top:235.01px" class="cls_005"><span class="cls_005">Experience</span></div>
+        <div style="position:absolute;left:80.29px;top:263.79px" class="cls_006"><span class="cls_006">{{experience1.position}}</span></div>
+        <div style="position:absolute;left:360.00px;top:264.54px" class="cls_006"><span class="cls_006">{{experience1.start_year}} to {{experience1.end_year}}</span></div>
+        <div style="position:absolute;left:80.29px;top:275.04px" class="cls_003"><span class="cls_003">{{experience1.company}}</span></div>
+		<div style="position:absolute;left:90.00px;top:292.29px" class="cls_003"><span class="cls_003">●  {{experience1.project}}</span></div>
+		
+
+        <div style="position:absolute;left:72.00px;top:316.01px" class="cls_005"><span class="cls_005">Projects</span></div>
+        <div style="position:absolute;left:80.29px;top:339.54px" class="cls_006"><span class="cls_006">Project</span></div>
+        <div style="position:absolute;left:144.00px;top:339.54px" class="cls_003"><span class="cls_003">{{project1}}</span></div>
+		
+
+        <div style="position:absolute;left:72.00px;top:436.50px" class="cls_007"><span class="cls_007">Technical</span></div>
+        <div style="position:absolute;left:81.16px;top:469.01px" class="cls_005"><span class="cls_005">Programming Languages</span></div>
+		<div style="position:absolute;left:81.16px;top:480.50px" class="cls_008"><span class="cls_008">Proficient:  {%if programming_languages|length > 1%} {%for lang in programming_languages%} {{lang}}, {%endfor%} {%else%} {{programming_languages.0}} {%endif%} </span></div>
+		
+        <div style="position:absolute;left:81.16px;top:511.01px" class="cls_005"><span class="cls_005">Software</span></div>
+        <div style="position:absolute;left:81.16px;top:522.50px" class="cls_008"><span class="cls_008">{%if softwares|length > 1%} {%for lang in softwares%} {{lang}}, {%endfor%} {%else%} {{softwares.0}} {%endif%}</span></div>
+
+		</div>
+		
+    </body>
+</html>

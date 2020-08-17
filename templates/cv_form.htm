@@ -1,0 +1,93 @@
+<form action="." method="post">
+    {%csrf_token%}
+    <table>
+        <tr>
+            <td>Full Name:</td>
+            <td><input type="text" name = "fullname" required></td>  
+        </tr>
+        <tr>
+            <td>Email: </td>
+            <td><input type="email" name="email" placeholder="Email" required ></td>
+        </tr>
+        <tr>
+            <td>Github Url:</td>
+            <td><input type="text" name = "github" placeholder ="https://github.com/username" required></td>  
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td><input type="tel" name = "phone" required></td>  
+        </tr>
+        <tr>
+            <td>Address Line 1:</td>
+            <td><input type="text" name = "address1" required></td>  
+        </tr>
+        <tr>
+            <td>Address Line 2:</td>
+            <td><input type="text" name = "address2" ></td>  
+        </tr>
+        
+        
+        <tr>
+            <td>University/College 1:</td>
+            <td><input type="text" name = "uni-name1" placeholder="University Name"  required></td>  
+            <td><input type="text" name = "degree1" placeholder="Bachelors/Masters" required></td>
+            <td><input type="text" name = "faculty1" placeholder="Faculty" required ></td>  
+            <td> <input type="text" name="start-year1" placeholder="Start Year" required> </td>
+            <td><input type="text" name="end-year1" placeholder="End Year" required> </td>
+            
+        </tr>
+        <tr>
+            <td>University/College 2:</td>
+            <td><input type="text" name = "uni-name2" placeholder="University Name" ></td>  
+            <td><input type="text" name = "faculty2" placeholder="Faculty" ></td>  
+            <td> <input type="text" name="start-year2" placeholder="Start Year"> </td>
+            <td><input type="text" name="end-year2" placeholder="End Year"> </td>
+        </tr>
+       
+        <tr>
+            <td>Experience 1:</td>
+            <td><input type="text" name = "company-name1" placeholder="Company Name" ></td>  
+            <td><input type="text" name = "position1" placeholder="Position" ></td>  
+            <td> <input type="text" name="job-start-year1" placeholder="Start Year"> </td>
+            <td> <textarea name="exp1-project-desc" cols="18" rows="5" placeholder="Project Details"></textarea> </td>
+
+            <td><input type="text" name="job-end-year1" placeholder="End Year"> </td>
+
+        </tr>
+        <tr>
+            <td>Experience 2:</td>
+            <td><input type="text" name = "company-name2" placeholder="Company Name" ></td>  
+            <td><input type="text" name = "position2" placeholder="Position" ></td>  
+            <td> <input type="text" name="job-start-year2" placeholder="Start Year"> </td>
+            <td><input type="text" name="job-end-year2" placeholder="End Year"> </td>
+        </tr>
+        <tr>
+            <td>Project 1: </td>
+            <td> <textarea name="project1-desc" cols="18" rows="5" placeholder="Project Details"></textarea> </td>
+
+        </tr>
+        <tr>
+            <td>Project 2: </td>
+            <td> <textarea name="project2-desc" cols="18" rows="5" placeholder="Project Details"></textarea> </td>
+
+        </tr>
+        <tr>
+            <td>Project 3: </td>
+            <td> <textarea name="project3-desc" cols="18" rows="5" placeholder="Project Details"></textarea> </td>
+        </tr>
+        <tr>
+            <td>Programming Languages:</td>
+            <td><input type="text" name="programming-lang1" placeholder="Programming Language"></td>
+            <td><input type="text" name="programming-lang2" placeholder="Programming Language"></td>
+            <td><input type="text" name="programming-lang3" placeholder="Programming Language"></td>
+            <td><input type="text" name="programming-lang4" placeholder="Programming Language"></td>
+        </tr>
+        <tr>
+            <td>Software:</td>
+            <td><input type="text" name="soft1" placeholder="Software" ></td>
+            <td><input type="text" name="soft1" placeholder="Software" ></td>
+        </tr>
+        
+    </table>
+    <input type="submit" value="Generate">
+</form>
